@@ -1,0 +1,132 @@
+/*POLJE TELEFON*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* KONTAKT */
+
+.contact-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+.contact-container {
+  width: 80%;
+  height: auto;
+  box-shadow: 1px 15px 35px #9e9e9e73;
+  margin-top: 35%;
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* row-gap: 5%; */
+  font-family: "Oswald", sans-serif;
+
+  background-color: rgba(5, 36, 5, 0.1);
+}
+
+.CTA {
+  font-size: xx-large;
+  color: #144405;
+  padding: 5%;
+}
+
+.dates {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-container form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container form input,
+form textarea {
+  width: 80%;
+  text-align: center;
+  padding: 1%;
+  border: 2px solid green;
+}
+
+.contact-container form input::placeholder,
+textarea {
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.contact-container input,
+textarea {
+  /* width: 80%; */
+  /* height: 45px; */
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  /* padding: 15px; */
+  /* color: white; */
+  font-size: 17px;
+  margin: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.contact-container input:focus {
+  outline: none;
+}
+
+.contact-container textarea:focus {
+  outline: none;
+}
+
+.contact-container textarea::placeholder {
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.contact-container button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  /* color: white; */
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* margin: 10px; */
+  padding: 10px;
+}
+
+.contact-container button i {
+  padding-left: 5px;
+}
+
+.contact-container button:hover {
+  background-color: #7cf9c7ac;
+  border: 2px solid #19756d;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-container form {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .contact-container form {
+    height: 36rem;
+  }
+}

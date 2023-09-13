@@ -1,0 +1,121 @@
+/* AKTIVNOSTI */
+.activities {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  /* margin: 120px 0; */
+  flex-wrap: wrap;
+}
+
+.activity-container {
+
+  margin: 80px 0 60px 0;
+  width: 21%;
+  background-color: rgba(5, 36, 5, 0.1);
+  filter: drop-shadow(0px 10px 10px #8ff5d67e);
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  visibility: hidden;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+}
+
+.image-container:hover .overlay {
+  visibility: visible;
+  background: #0a5314e3;
+}
+
+.activities h3 {
+  margin: 20px 20px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  border-left: 4px solid #032c1c;
+  color: #0c5028ab;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.activities p {
+  text-align: justify;
+  font-family: 'Oswald';
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 23px;
+  color: #052713ab;
+}
+
+@media screen and (max-width: 1100px) {
+  .image-container h3 {
+    font-size: 2 0px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activity-container {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .activity-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .image-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+  }
+
+  .image-container img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='img/2dfavicon.jpg' />
+    <title>Rezervacija</title>
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- NAV MENU -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="index.html">Zlatibor</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Home</a></li>
+                <li><a href="oNama.html" class="menu-btn">About</a></li>
+                <li><a href="aktivnosti.html" class="menu-btn">Activities</a></li>
+                <li><a href="kontakt.html" class="menu-btn">Reservation</a></li>
+            </ul>
+            <div class="menu-btn">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- KONTAKT -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+
+            <form id='form'>
+                <p class="CTA">
+                    Book a room</p>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="mail" id="mail" placeholder="Email">
+                <input type="number" name="tel" id="tel" placeholder="Phone number" minlength="9">
+                <input type="text" class="dates" placeholder="Check in:" id="datepicker" />
+                <input type="text" class="dates" placeholder="CHeck out:" id="datepicker2" />
+
+
+
+                <textarea name="idMessage" id="message" rows="5" placeholder="Note"></textarea>
+                <button type="submit">Send <i class="fa fa-arrow-right"></i></button>
+            </form>
+        </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
